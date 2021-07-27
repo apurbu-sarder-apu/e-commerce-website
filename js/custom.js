@@ -47,7 +47,7 @@ jQuery(document).ready(function ($) {
 
         if (hamburgerClose.length) {
             hamburgerClose.on('click', function () {
-                if (!menuActive) {
+                if (menuActive) {
                     closeMenu();
                 }
             });
